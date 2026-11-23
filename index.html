@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LISTA DE PRODUCTOS PARA SEPARAR · CULTURA COMICS GUATIRE</title>
+<style>
+  :root{
+    --bg:#f6f4ef; --card:#fff; --ink:#1d1b19; --muted:#6f6a63; --line:#e5e0d6; --accent:#c2410c; --ok:#15803d;
+    --k-banda:#9f1239; --k-anime:#1d4ed8; --k-personaje:#7e22ce; --k-ninos:#0f766e; --k-acc:#b45309; --k-otro:#475569;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.45}
+  header{max-width:900px;margin:0 auto;padding:32px 20px 8px}
+  h1{margin:0 0 6px;font-size:25px;letter-spacing:.02em;line-height:1.2}
+  header p{margin:0;color:var(--muted)}
+  .wrap{max-width:900px;margin:0 auto;padding:0 20px 80px}
+  .panel{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 20px;margin-top:18px}
+  .panel h2{margin:0 0 10px;font-size:16px}
+  .progress{height:10px;background:#ece7dc;border-radius:99px;overflow:hidden;margin:8px 0 4px}
+  .progress>i{display:block;height:100%;width:0;background:var(--ok);transition:width .25s}
+  .small{font-size:13px;color:var(--muted)}
+  .totals{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+  .tot{background:#f6f3ec;border-radius:12px;padding:8px 14px;font-size:14px}
+  .tot b{font-size:20px;display:block;line-height:1.1}
+  .nav{display:flex;gap:6px;flex-wrap:wrap}
+  .nav a{display:inline-flex;gap:6px;align-items:center;text-decoration:none;color:inherit;border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:13px;background:#fff}
+  .nav a b{background:var(--ink);color:#fff;border-radius:50%;width:22px;height:22px;display:grid;place-items:center;font-size:12px}
+
+  section{margin-top:30px;scroll-margin-top:12px}
+  .sh{display:flex;gap:12px;align-items:center;padding-bottom:8px;border-bottom:2px solid var(--ink)}
+  .sh .pos{flex:none;width:36px;height:36px;border-radius:50%;background:var(--ink);color:#fff;font-weight:700;font-size:17px;display:grid;place-items:center}
+  .sh h2{margin:0;font-size:20px;letter-spacing:-.01em;line-height:1.2;flex:1}
+  .sh .cnt{font-size:13px;color:var(--muted);white-space:nowrap}
+  .grp{margin-top:16px}
+  .grp h3{margin:0 0 8px;font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+  .items{display:grid;gap:8px}
+  .item{display:grid;grid-template-columns:64px 1fr auto;gap:14px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 14px}
+  .item.done{background:#eef8f0;border-color:#bfe2c8}
+  .item.done .nm{text-decoration:line-through;text-decoration-color:#9ab9a2}
+  .thumb{width:64px;height:64px;border-radius:14px;overflow:hidden;display:grid;place-items:center;background:var(--c);color:#fff;font-weight:800;letter-spacing:.02em}
+  .thumb img{width:100%;height:100%;object-fit:cover;display:block}
+  .thumb.l1{font-size:26px}.thumb.l2{font-size:24px}.thumb.l3{font-size:18px}.thumb.l4{font-size:15px}
+  .k-banda{--c:var(--k-banda)} .k-anime{--c:var(--k-anime)} .k-personaje{--c:var(--k-personaje)}
+  .k-ninos{--c:var(--k-ninos)} .k-acc{--c:var(--k-acc)} .k-otro{--c:var(--k-otro)}
+  .nm{font-size:17px;font-weight:700;line-height:1.25}
+  .meta{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-top:4px}
+  .tag{font-size:12px;font-weight:700;color:#fff;background:var(--c);padding:2px 9px;border-radius:999px}
+  .det{font-size:14px;color:#3d3a36}
+  .also{font-size:12px;color:var(--muted);background:#f1ede4;padding:2px 9px;border-radius:999px}
+  .find{font-size:12.5px;color:var(--muted)}
+  .chk{display:flex;flex-direction:column;align-items:center;gap:3px;font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;cursor:pointer}
+  .chk input{width:26px;height:26px;accent-color:var(--ok);cursor:pointer}
+  .qty{font-size:13px;font-weight:800;color:#fff;background:var(--accent);padding:2px 10px;border-radius:999px}
+  @media(max-width:520px){.item{grid-template-columns:56px 1fr auto;gap:10px}.thumb{width:56px;height:56px}.nm{font-size:16px}}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>LISTA DE PRODUCTOS PARA SEPARAR · CULTURA COMICS GUATIRE</h1>
+  <p>Las secciones siguen el mismo orden de grabación del briefing (1 al 10).</p>
+</header>
+
+<div class="wrap">
+  <div class="panel" style="border-left:6px solid var(--accent)">
+    <h2>Instrucciones</h2>
+    <p style="margin:0;font-size:15.5px">Separa estos productos y déjalos listos para cuando ella los solicite.</p>
+    <p style="margin:6px 0 0;font-size:15.5px">En cada modelo está descrito cuántas camisas son.</p>
+  </div>
+
+  <div class="panel">
+    <h2>Avance</h2>
+    <div class="progress"><i id="bar"></i></div>
+    <div class="small" id="progressTxt"></div>
+  </div>
+
+  <div class="panel">
+    <h2>Ir a una grabación</h2>
+    <div class="nav" id="nav"></div>
+  </div>
+
+  <div id="content"></div>
+</div>
+
+<script>
+/* =========================================================
+   DATOS
+   cat: banda | anime | personaje | ninos | acc | otro
+   ini: letras del identificador visual (se reemplaza por una foto si el item trae "img")
+   key: identifica el mismo personaje/banda en distintas grabaciones
+   q:   texto para buscar imágenes de referencia
+   type: "camisa" (por defecto) | "acc" (accesorio) | "exh" (exhibición, no se cuenta)
+   ========================================================= */
+const SECTIONS = [
+ { pos:1, name:"Ahora puedes escuchar y vestir rock", groups:[
+   {label:"Video 1", items:[
+     {name:"Soda Stereo", ini:"SS", key:"soda-stereo", cat:"banda", q:"Soda Stereo banda"},
+     {name:"AC/DC", ini:"AC", key:"acdc", cat:"banda", q:"AC/DC banda"},
+     {name:"Metallica", ini:"M", key:"metallica", cat:"banda", q:"Metallica banda"},
+     {name:"Korn", ini:"K", key:"korn", cat:"banda", q:"Korn banda"},
+     {name:"Pink Floyd", ini:"PF", key:"pink-floyd", cat:"banda", q:"Pink Floyd banda"},
+     {name:"Radiohead", ini:"R", key:"radiohead", cat:"banda", q:"Radiohead banda"},
+     {name:"Black Sabbath", ini:"BS", key:"black-sabbath", cat:"banda", q:"Black Sabbath banda"}
+   ]},
+   {label:"Video 2", items:[
+     {name:"The Beatles", ini:"B", key:"beatles", cat:"banda", q:"The Beatles banda"},
+     {name:"Guns N' Roses", ini:"GR", key:"guns", cat:"banda", q:"Guns N' Roses banda"},
+     {name:"Queen", ini:"Q", key:"queen", cat:"banda", q:"Queen banda"},
+     {name:"Megadeth", ini:"MD", key:"megadeth", cat:"banda", q:"Megadeth banda"},
+     {name:"Nirvana", ini:"N", key:"nirvana", cat:"banda", q:"Nirvana banda"}
+   ]},
+   {label:"Video 3 · Anime infantil", items:[
+     {name:"Anime infantil", ini:"A8", cat:"ninos", qty:2, detail:"Talla 8"},
+     {name:"Anime infantil", ini:"A6", cat:"ninos", detail:"Talla 6"},
+     {name:"Anime infantil", ini:"A7", cat:"ninos", detail:"Talla 7"}
+   ]},
+   {label:"Video 4 · Superhéroes y personajes infantiles", items:[
+     {name:"Superhéroe o personaje infantil", ini:"♂", cat:"ninos", qty:2, detail:"Modelos de niño"},
+     {name:"Superhéroe o personaje infantil", ini:"♀", cat:"ninos", detail:"Modelo de niña"}
+   ]},
+   {label:"Video 5 · Modelos de niña", items:[
+     {name:"Modelos de niña que hayan generado ventas", ini:"♀", cat:"ninos", qty:3}
+   ]}
+ ]},
+
+ { pos:2, name:"Puedes vestirte así en Guatire", groups:[
+   {label:"Un video por camisa", items:[
+     {name:"Goku", ini:"G", key:"goku", cat:"anime", q:"Goku Dragon Ball", detail:"Video 1"},
+     {name:"Spider-Man", ini:"SM", key:"spiderman", cat:"personaje", q:"Spider-Man", detail:"Video 2"},
+     {name:"Goku", ini:"G", key:"goku", cat:"anime", q:"Goku Dragon Ball", detail:"Video 3"},
+     {name:"Monkey D. Luffy", ini:"ML", key:"luffy", cat:"anime", q:"Monkey D. Luffy One Piece", detail:"Video 4"},
+     {name:"Naruto", ini:"N", key:"naruto", cat:"anime", q:"Naruto anime", detail:"Video 5"}
+   ]}
+ ]},
+
+ { pos:3, name:"A veces solo necesitas una camisa chévere para mejorar el día", groups:[
+   {label:"Un video por camisa", items:[
+     {name:"Gorillaz", ini:"GZ", key:"gorillaz", cat:"banda", q:"Gorillaz banda", detail:"Video 1"},
+     {name:"Héctor Lavoe", ini:"HL", key:"hector-lavoe", cat:"banda", q:"Héctor Lavoe cantante", detail:"Video 2"},
+     {name:"Harry Potter", ini:"HP", key:"harry-potter", cat:"personaje", q:"Harry Potter", detail:"Video 3"}
+   ]}
+ ]},
+
+ { pos:4, name:"Pov: estás buscando la camisa de tu personaje", groups:[
+   {label:"6 camisas, en este orden", items:[
+     {name:"Naruto", ini:"N", key:"naruto", cat:"anime", q:"Naruto anime", detail:"Camisa 1 de 6 · la lleva puesta El Tino al inicio"},
+     {name:"Goku", ini:"G", key:"goku", cat:"anime", q:"Goku Dragon Ball", detail:"Camisa 2 de 6"},
+     {name:"Attack on Titan (Ataque a los Titanes)", ini:"AT", key:"aot", cat:"anime", q:"Attack on Titan anime", detail:"Camisa 3 de 6"},
+     {name:"Kimetsu no Yaiba", ini:"KY", key:"kimetsu", cat:"anime", q:"Kimetsu no Yaiba anime", detail:"Camisa 4 de 6"},
+     {name:"Solo Leveling", ini:"SL", key:"solo-leveling", cat:"anime", q:"Solo Leveling anime", detail:"Camisa 5 de 6"},
+     {name:"Naruto", ini:"N", key:"naruto", cat:"anime", q:"Naruto anime", detail:"Camisa 6 de 6 · la última, con la que finaliza"}
+   ]}
+ ]},
+
+ { pos:5, name:"Guatire tiene una tienda diferente, ¿ya la conocías?", groups:[
+   {label:"En la tienda", items:[
+     {name:"Productos que ya están en exhibición", ini:"🏬", cat:"otro", type:"exh", detail:"En el mostrador, en los ganchos y en las repisas"}
+   ]}
+ ]},
+
+ { pos:6, name:"Regalo de amigo secreto", groups:[
+   {label:"Para colocar arriba del mostrador", items:[
+     {name:"Collares", ini:"CO", cat:"acc", type:"acc", detail:"Escena 1"},
+     {name:"Gorras", ini:"GO", cat:"acc", type:"acc", detail:"Escena 2"},
+     {name:"Carteras", ini:"CA", cat:"acc", type:"acc", detail:"Escena 3"}
+   ]}
+ ]},
+
+ { pos:7, name:"Modelo destacado + trend humana", groups:[
+   {label:"Camisa", items:[
+     {name:"Uchiha Itachi (o Kakashi)", ini:"UI", key:"itachi", cat:"anime", q:"Uchiha Itachi Naruto"}
+   ]}
+ ]},
+
+ { pos:8, name:"La pesadilla de los tibios", groups:[
+   {label:"Camisas", items:[
+     {name:"Linkin Park", ini:"LP", key:"linkin-park", cat:"banda", q:"Linkin Park banda"},
+     {name:"Slipknot", ini:"SK", key:"slipknot", cat:"banda", q:"Slipknot banda"},
+     {name:"Red Hot Chili Peppers", ini:"RHCP", key:"rhcp", cat:"banda", q:"Red Hot Chili Peppers banda"},
+     {name:"System of a Down", ini:"SOAD", key:"soad", cat:"banda", q:"System of a Down banda"},
+     {name:"Metallica", ini:"M", key:"metallica", cat:"banda", q:"Metallica banda"}
+   ]}
+ ]},
+
+ { pos:9, name:"Tenemos un año, danos tu me gusta", groups:[
+   {label:"Detrás de escena", items:[
+     {name:"No hay productos por separar", ini:"—", cat:"otro", type:"exh", detail:"Se graba el detrás de escena"}
+   ]}
+ ]},
+
+ { pos:10, name:"¡Tenemos los animes que están de moda!", groups:[
+   {label:"Camisas del mismo anime, con diseños diferentes", items:[
+     {name:"Attack on Titan (Ataque a los Titanes)", ini:"AT", key:"aot", cat:"anime", q:"Attack on Titan anime", qty:2, detail:"Con diseños diferentes"}
+   ]}
+ ]}
+];
+
+/* =========================================================
+   RENDER
+   ========================================================= */
+const $ = s => document.querySelector(s);
+const esc = s => String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const CAT = {banda:"Banda / música", anime:"Anime", personaje:"Personaje", ninos:"Niños", acc:"Accesorio", otro:"Otro"};
+const KEY = "lista-productos-separados-v1";
+let done = {};
+try{ done = JSON.parse(localStorage.getItem(KEY)||"{}")||{}; }catch(e){}
+const save = ()=>{ try{ localStorage.setItem(KEY, JSON.stringify(done)); }catch(e){} };
+
+// dónde aparece cada personaje/banda
+const where = {};
+SECTIONS.forEach(s=>s.groups.forEach(g=>g.items.forEach(it=>{ if(it.key){ (where[it.key]=where[it.key]||new Set()).add(s.pos); } })));
+
+let counter = 0;
+function itemHTML(s, it){
+  const id = "i"+(counter++);
+  it._id = id;
+  const qty = it.qty||1, type = it.type||"camisa";
+  const others = it.key ? [...where[it.key]].filter(p=>p!==s.pos).sort((a,b)=>a-b) : [];
+  const len = Math.min(4,(it.ini||"").length||1);
+  const thumb = it.img
+    ? `<div class="thumb ${'k-'+it.cat}"><img src="${it.img}" alt="${esc(it.name)}"></div>`
+    : `<div class="thumb l${len} k-${it.cat}" aria-hidden="true">${esc(it.ini||"")}</div>`;
+  const find = it.q ? ` <a class="find" target="_blank" rel="noopener" href="https://www.google.com/search?tbm=isch&q=${encodeURIComponent(it.q)}">Ver imágenes ↗</a>` : "";
+  return `<div class="item ${done[id]?"done":""}" data-id="${id}">
+    ${thumb}
+    <div>
+      <div class="nm">${esc(it.name)}</div>
+      <div class="meta k-${it.cat}">
+        ${type==="camisa"?`<span class="qty">${qty} camisa${qty>1?"s":""}</span>`:""}
+        ${type==="exh"?"":`<span class="tag">${CAT[it.cat]}</span>`}
+        ${it.detail?`<span class="det">${esc(it.detail)}</span>`:""}
+        ${others.length?`<span class="also">También en la grabación ${others.join(", ")}</span>`:""}
+        ${find}
+      </div>
+    </div>
+    ${type==="exh"?"":`<label class="chk"><input type="checkbox" data-id="${id}" ${done[id]?"checked":""}>Separada</label>`}
+  </div>`;
+}
+
+function render(){
+  counter = 0;
+  $("#nav").innerHTML = SECTIONS.map(s=>`<a href="#g${s.pos}"><b>${s.pos}</b>${esc(s.name.length>26?s.name.slice(0,26)+"…":s.name)}</a>`).join("");
+  $("#content").innerHTML = SECTIONS.map(s=>{
+    const body = s.groups.map(g=>`<div class="grp"><h3>${esc(g.label)}</h3><div class="items">${g.items.map(it=>itemHTML(s,it)).join("")}</div></div>`).join("");
+    const shirts = s.groups.flatMap(g=>g.items).filter(it=>(it.type||"camisa")==="camisa").reduce((a,it)=>a+(it.qty||1),0);
+    const accs = s.groups.flatMap(g=>g.items).filter(it=>it.type==="acc").length;
+    const cnt = shirts?`${shirts} camisa${shirts>1?"s":""}`: accs?`${accs} tipos de accesorio`:"";
+    return `<section id="g${s.pos}"><div class="sh"><span class="pos">${s.pos}</span><h2>${esc(s.name)}</h2><span class="cnt">${cnt}</span></div>${body}</section>`;
+  }).join("");
+  stats();
+}
+
+function stats(){
+  const all = SECTIONS.flatMap(s=>s.groups.flatMap(g=>g.items)).filter(it=>it.type!=="exh");
+  const n = all.filter(it=>done[it._id]).length;
+  $("#bar").style.width = (all.length? n/all.length*100:0)+"%";
+  $("#progressTxt").textContent = `${n} de ${all.length} productos separados`;
+}
+
+document.addEventListener("change",e=>{
+  const id = e.target.dataset && e.target.dataset.id; if(!id || e.target.type!=="checkbox") return;
+  if(e.target.checked) done[id]=true; else delete done[id];
+  save(); e.target.closest(".item").classList.toggle("done", e.target.checked); stats();
+});
+render();
+</script>
+</body>
+</html>
